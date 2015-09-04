@@ -1,7 +1,7 @@
-myApp.controller("LoginCtrl", function($scope, $location, $timeout){
+myApp.controller("LoginCtrl", function($scope, $location, $timeout, loginUserService){
       $scope.users = [
-          {username: "ravi", password: "ravi123", registerDate:""},
-          {username: "raju", password: "raju529", registerDate:""}
+          {username: "ravi", password: "ravi123", registerDate:"", isAdmin: true},
+          {username: "raju", password: "raju529", registerDate:"", isAdmin:false}
       ];
 
   $scope.login = function(){
@@ -9,6 +9,9 @@ myApp.controller("LoginCtrl", function($scope, $location, $timeout){
       console.log($scope.password);
       var user = {username: $scope.username,password: $scope.password};
       var u = _.find($scope.users, user);
+
+      loginUserService.loginUser = u;
+      console.log(loginUserService);
       if(u){
           window.location.href = "#/userproducts";
       }

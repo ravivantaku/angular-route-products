@@ -27,5 +27,10 @@ myApp.config(function($routeProvider){
             controller: "UserProductsCtrl"
 
         })
+        .when("/createproduct", {
+            url: "/createproduct",
+            templateUrl: "views/createProduct.html",
+            controller: "CreateProductController"
+        })
         .otherwise("/");
 });

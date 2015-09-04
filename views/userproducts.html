@@ -1,4 +1,32 @@
+<br>
+<br>
+<section>
 <h3>Products List</h3>
-<ul ng-repeat="product in userproducts" class="list-group">
-    <li class="list-group-item">{{product.name}}</li>
-</ul>
+    <a ng-show="loginUser.isAdmin" class="btn btn-primary" ng-href="#/createproduct">Create Product</a>
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Product Name</th>
+            <th class="pull-right" ng-show="loginUser.isAdmin">Actions</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="product in userproducts">
+            <td>{{product.name}}</td>
+            <td>
+                <div class="pull-right" ng-show="loginUser.isAdmin">
+                    <button class="btn btn-primary">Edit</button>
+                    <button class="btn btn-warning">Remove</button>
+                </div>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+<!--<ul ng-repeat="product in userproducts" class="list-group">-->
+    <!--<li class="list-group-item">-->
+        <!--<div>-->
+            <!-- -->
+        <!--</div>-->
+    <!--</li>-->
+<!--</ul>-->
+</section>
