@@ -1,0 +1,74 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install' ]
+2 info using npm@2.11.3
+3 info using node@v0.12.7
+4 verbose readDependencies loading dependencies from D:\angular\angular-route-products\package.json
+5 warn package.json application-name@0.0.1 No description
+6 warn package.json application-name@0.0.1 No repository field.
+7 warn package.json application-name@0.0.1 No README data
+8 warn package.json application-name@0.0.1 No license field.
+9 verbose install where, deps [ 'D:\\angular\\angular-route-products',
+9 verbose install   [ 'angular', 'angular-route', 'bootstrap', 'jquery', 'lodash' ] ]
+10 verbose install where, peers [ 'D:\\angular\\angular-route-products', [] ]
+11 verbose installManyTop reading for lifecycle D:\angular\angular-route-products\package.json
+12 info preinstall application-name@0.0.1
+13 verbose installManyTop reading scoped package data from D:\angular\angular-route-products\node_modules\angular\package.json
+14 verbose installManyTop reading scoped package data from D:\angular\angular-route-products\node_modules\angular-route\package.json
+15 verbose installManyTop reading scoped package data from D:\angular\angular-route-products\node_modules\bootstrap\package.json
+16 verbose installManyTop reading scoped package data from D:\angular\angular-route-products\node_modules\jquery\package.json
+17 info package.json jquery@2.1.4 No license field.
+18 verbose readDependencies loading dependencies from D:\angular\angular-route-products\package.json
+19 verbose targetResolver reading package data from D:\angular\angular-route-products\node_modules\angular\package.json
+20 verbose targetResolver reading package data from D:\angular\angular-route-products\node_modules\angular-route\package.json
+21 verbose targetResolver reading package data from D:\angular\angular-route-products\node_modules\bootstrap\package.json
+22 verbose targetResolver reading package data from D:\angular\angular-route-products\node_modules\jquery\package.json
+23 verbose already installed skipping jquery@^2.1.4 D:\angular\angular-route-products
+24 silly cache add args [ 'lodash@https://raw.githubusercontent.com/lodash/lodash/master/lodash.min.js',
+24 silly cache add   null ]
+25 verbose cache add spec lodash@https://raw.githubusercontent.com/lodash/lodash/master/lodash.min.js
+26 verbose already installed skipping angular@^1.4.5 D:\angular\angular-route-products
+27 verbose already installed skipping angular-route@^1.4.5 D:\angular\angular-route-products
+28 silly cache add parsed spec { raw: 'lodash@https://raw.githubusercontent.com/lodash/lodash/master/lodash.min.js',
+28 silly cache add   scope: null,
+28 silly cache add   name: 'lodash',
+28 silly cache add   rawSpec: 'https://raw.githubusercontent.com/lodash/lodash/master/lodash.min.js',
+28 silly cache add   spec: 'https://raw.githubusercontent.com/lodash/lodash/master/lodash.min.js',
+28 silly cache add   type: 'remote' }
+29 silly mapToRegistry name lodash@https://raw.githubusercontent.com/lodash/lodash/master/lodash.min.js
+30 silly mapToRegistry using default registry
+31 silly mapToRegistry registry https://registry.npmjs.org/
+32 silly mapToRegistry uri https://registry.npmjs.org/lodash@https://raw.githubusercontent.com/lodash/lodash/master/lodash.min.js
+33 verbose addRemoteTarball https://raw.githubusercontent.com/lodash/lodash/master/lodash.min.js not in flight; adding
+34 verbose addRemoteTarball [ 'https://raw.githubusercontent.com/lodash/lodash/master/lodash.min.js',
+34 verbose addRemoteTarball   null ]
+35 verbose already installed skipping bootstrap@^3.3.5 D:\angular\angular-route-products
+36 info retry fetch attempt 1 at 10:53:09 AM
+37 info attempt registry request try #1 at 10:53:09 AM
+38 http fetch GET https://raw.githubusercontent.com/lodash/lodash/master/lodash.min.js
+39 verbose request id 0ba98340a6da6418
+40 http fetch 200 https://raw.githubusercontent.com/lodash/lodash/master/lodash.min.js
+41 silly fetchAndShaCheck shasum 83fe85366e1a7cacf316ae234a75a918b419bc01
+42 verbose addTmpTarball C:\Users\balu\AppData\Local\Temp\npm-580-fe3649ae\raw.githubusercontent.com\lodash\lodash\master\lodash.min.js not in flight; adding
+43 verbose addTmpTarball validating metadata from C:\Users\balu\AppData\Local\Temp\npm-580-fe3649ae\raw.githubusercontent.com\lodash\lodash\master\lodash.min.js
+44 verbose tar unpack C:\Users\balu\AppData\Local\Temp\npm-580-fe3649ae\raw.githubusercontent.com\lodash\lodash\master\lodash.min.js
+45 verbose tar unpacking to C:\Users\balu\AppData\Local\Temp\npm-580-fe3649ae\unpack-8e6180a5ca28
+46 silly gentlyRm C:\Users\balu\AppData\Local\Temp\npm-580-fe3649ae\unpack-8e6180a5ca28 is being purged
+47 verbose gentlyRm don't care about contents; nuking C:\Users\balu\AppData\Local\Temp\npm-580-fe3649ae\unpack-8e6180a5ca28
+48 silly gunzTarPerm modes [ '777', '666' ]
+49 error not a package C:\Users\balu\AppData\Local\Temp\npm-580-fe3649ae\raw.githubusercontent.com\lodash\lodash\master\lodash.min.js
+50 verbose stack Error: ENOENT, open 'C:\Users\balu\AppData\Local\Temp\npm-580-fe3649ae\unpack-8e6180a5ca28\package.json'
+50 verbose stack     at Error (native)
+51 verbose cwd D:\angular\angular-route-products
+52 error Windows_NT 6.3.9600
+53 error argv "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install"
+54 error node v0.12.7
+55 error npm  v2.11.3
+56 error path C:\Users\balu\AppData\Local\Temp\npm-580-fe3649ae\unpack-8e6180a5ca28\package.json
+57 error code ENOENT
+58 error errno -4058
+59 error enoent ENOENT, open 'C:\Users\balu\AppData\Local\Temp\npm-580-fe3649ae\unpack-8e6180a5ca28\package.json'
+59 error enoent This is most likely not a problem with npm itself
+59 error enoent and is related to npm not being able to find a file.
+60 verbose exit [ -4058, true ]
