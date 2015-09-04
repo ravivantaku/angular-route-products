@@ -18,10 +18,13 @@ myApp.config(function($routeProvider){
         })
         .when("/products/:productId", {
             url: "/products/:productId",
-            templateUrl: "",
-            controller: ""
+            templateUrl: "views/product.html",
+            controller: "ProductCtrl"
         })
         .when("/userproducts", {
+            url:"/userproducts",
+            templateUrl: "views/userproducts.html",
+            controller: "UserProductsCtrl"
 
         })
         .otherwise("/");
