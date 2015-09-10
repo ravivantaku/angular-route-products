@@ -1,6 +1,6 @@
 var myApp = angular.module("SampleReg", ["ngRoute"]);
 
-myApp.config(function($routeProvider){
+myApp.config(["$routeProvider", function($routeProvider){
     $routeProvider.when("/", {
         url: "/",
         templateUrl: "views/login.html",
@@ -32,5 +32,10 @@ myApp.config(function($routeProvider){
             templateUrl: "views/createProduct.html",
             controller: "CreateProductController"
         })
+        .when("/editproduct/:productId", {
+            url: "/editproduct/:productId",
+            templateUrl: "views/editProduct.html",
+            controller: "EditProductController"
+        })
         .otherwise("/");
-});
+}]);

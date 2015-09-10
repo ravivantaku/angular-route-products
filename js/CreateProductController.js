@@ -1,9 +1,11 @@
 
-myApp.controller("CreateProductController", function($scope, $rootScope, $window){
-$scope.createProduct = function(){
-    $rootScope.userProduct = $scope.product;
+myApp.controller("CreateProductController", function($scope, userDataService){
+
+    $scope.createProduct = function(){
+        userDataService.addProduct($scope.product);
     window.location.href = "#/userproducts";
 };
+
     $scope.clearProduct = function(){
         $scope.product = {};
     };

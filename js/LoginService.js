@@ -4,12 +4,9 @@ myApp.service("userService", function(){
 
 });
 myApp.factory("loginUserService", function(EmpId){
-       var loginUser = {};
-
-
-
-
-    return {
-        loginUser: loginUser
+    var user = {};
+    user.getUser = function(){
+        return this.loginUser;
     };
+    return user;
 });

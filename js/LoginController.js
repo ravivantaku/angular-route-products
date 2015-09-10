@@ -1,4 +1,4 @@
-myApp.controller("LoginCtrl", function($scope, $location, $timeout, loginUserService){
+myApp.controller("LoginCtrl", function($scope, $location, loginUserService){
       $scope.users = [
           {username: "ravi", password: "ravi123", registerDate:"", isAdmin: true},
           {username: "raju", password: "raju529", registerDate:"", isAdmin:false}
@@ -11,7 +11,7 @@ myApp.controller("LoginCtrl", function($scope, $location, $timeout, loginUserSer
       var u = _.find($scope.users, user);
 
       loginUserService.loginUser = u;
-      console.log(loginUserService);
+      console.log(loginUserService.getUser());
       if(u){
           window.location.href = "#/userproducts";
       }
