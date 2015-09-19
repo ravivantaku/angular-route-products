@@ -1,0 +1,34 @@
+{
+  "products": [
+    {
+      "name": "Product1",
+      "id": 1,
+      "price": 10,
+      "description": "product1",
+      "category": "pr"
+    },
+    {
+      "name": "Product2",
+      "id": 2,
+      "price": 20,
+      "description": "product2",
+      "category": "pr"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "username": "ravi",
+      "password": "ravi123",
+      "registerDate": "",
+      "isAdmin": true
+    },
+    {
+      "id": 2,
+      "username": "raju",
+      "password": "raju529",
+      "registerDate": "",
+      "isAdmin": false
+    }
+  ]
+}
